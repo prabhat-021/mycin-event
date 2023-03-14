@@ -1,0 +1,103 @@
+.single-event-section{
+    min-height: 100vh;
+color: white;
+    background-color: #050c19;
+    padding: 10px;
+
+}
+.eve-head-1{
+    font-size: 10vmin;
+    text-align: center;
+    margin: 2vmin;
+}
+
+.eve-sing-cont{
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vmin 0px;
+}
+.eve-img{
+width: 70vmin;
+}
+.des-cont{
+    text-align: justify;
+    width: 50vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+.eve-head-2{
+    font-size: 8vmin;
+}
+.eve-head-3{
+font-size: 7vmin;
+font-weight: bold;
+}
+.eve-para-1{
+    word-spacing: 3px;
+    font-size: 2.5vmin;
+    line-height: 5vmin;
+
+}
+
+.eve-desc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+margin-top: 20vmin;
+    align-items: center;
+   
+}
+.eve-des-det{
+    width: 50vw;
+    margin: 20px;
+}
+
+
+  .brn-grad-par{
+    text-align: center;
+  }       
+.btn-grad {
+    margin-top: 10px;
+    border: none;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    padding: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-size: 1em;
+    width:40vmin;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+.rule{
+
+    margin: 10px;
+    list-style: decimal;
+    text-align: left;
+}
+.rule li {
+    font-size: 2.5vmin;
+    margin: 20px;
+    letter-spacing: 1px;
+}
+.btn-rul{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}

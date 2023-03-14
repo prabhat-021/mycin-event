@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aed5caec.css",
+    "main.js": "/static/js/main.b4443bc4.js",
+    "static/media/brou.pdf": "/static/media/brou.adc2b74eb63f4a3467b4.pdf",
+    "static/media/group_dance.JPG": "/static/media/group_dance.74359facea941cf15ff8.JPG",
+    "static/media/shivani4.JPG": "/static/media/shivani4.47380b29abbb63c4f0fa.JPG",
+    "static/media/shivani2.jpg": "/static/media/shivani2.6f329e5a1b7cacdbce35.jpg",
+    "static/media/nukkad.jpg": "/static/media/nukkad.3aba11aaa58ddaa1c43c.jpg",
+    "static/media/rule.pdf": "/static/media/rule.35021c347d0ac2f751d1.pdf",
+    "static/media/shivani.jpg": "/static/media/shivani.c3b4c10054e248426cbe.jpg",
+    "static/media/fashion.JPG": "/static/media/fashion.2e5a00c2e2e918f5ec73.JPG",
+    "static/media/eve.jpg": "/static/media/eve.27ebf42ab302c651bc29.jpg",
+    "static/media/2.jpg": "/static/media/2.f4ad8ec4a9c846a39e97.jpg",
+    "static/media/shivani3.jpg": "/static/media/shivani3.44a8163e9ba1b6756b42.jpg",
+    "static/media/3.jpg": "/static/media/3.3682465c208fbf7ce8f0.jpg",
+    "static/media/logop.png": "/static/media/logop.8c1a787d45090e3aa60d.png",
+    "static/media/1.jpg": "/static/media/1.5086ac5389a294d75d90.jpg",
+    "static/media/gal1.jpg": "/static/media/gal1.f5016d150eb264f4984c.jpg",
+    "index.html": "/index.html",
+    "main.aed5caec.css.map": "/static/css/main.aed5caec.css.map",
+    "main.b4443bc4.js.map": "/static/js/main.b4443bc4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aed5caec.css",
+    "static/js/main.b4443bc4.js"
+  ]
+}

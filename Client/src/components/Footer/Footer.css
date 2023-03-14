@@ -1,0 +1,46 @@
+.footer {
+    background-color: #050c19;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+}
+
+.kiet-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin: 3%;
+}
+
+.head-1 {
+    font-size: 6vmin;
+}
+
+.div-h {
+   text-align: center;
+}
+
+.bottom {
+    letter-spacing: 3px;
+}
+
+.foot-img{
+    border-radius: 8px;
+    width: 20vmin;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.about-kiet{
+    text-align: center;
+}

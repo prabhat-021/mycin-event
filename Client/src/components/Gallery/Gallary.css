@@ -1,0 +1,81 @@
+.eve-gallary {
+
+    background-color: #050c19;
+    width: 100%;
+    height: 130vh;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+
+    ;
+
+}
+
+.grid-element {}
+
+.grid-elementbase {
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    grid-area: base;
+}
+
+.grid-element1 {
+   background-image: url('../../assets/eventimage/group_dance.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: one;
+}
+
+.grid-element2 {
+    background-image: url('../../assets/eventimage/shivani.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: two;
+}
+
+.grid-element3 {
+    background-image: url('../../assets/eventimage/nukkad.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: three;
+}
+
+.grid-element4 {
+    background-image: url('../../assets/eventimage/eve.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: four;
+}
+
+
+.grid-container {
+    grid-template-areas:
+        "base base base base"
+        "one one two two"
+        "three four two two";
+}
+
+@media screen and (max-width:803px) {
+    .grid-container {
+        grid-template-areas:
+            "base base base base"
+            "one one three three"
+            "four four four four"
+            "two two two two";
+    }  
+}

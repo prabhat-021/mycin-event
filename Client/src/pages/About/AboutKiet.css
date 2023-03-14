@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jost:wght@300&family=Montserrat:wght@300;600&family=Mukta:wght@200;400&family=Overpass:wght@200&family=Rubik+Vinyl&family=Signika+Negative:wght@300;500&family=Solway&display=swap');
+
+.main{
+    background-color: #050c19;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+     
+}
+.moc{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.about{
+    text-align:center;
+    font-size: 11vmin;
+    font-weight: bolder;
+    letter-spacing: .07in;
+    color: white;
+}
+.heading{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 6vmin;
+    letter-spacing: 4px;
+}
+.heading-1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5vmin;
+    letter-spacing: 4px;
+    /* text-align:center; */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.abt-cont{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font{
+    color: white;
+    padding: 2rem;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    
+}
+.scnd{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.img{
+  width: 70vmin;
+  border-radius: 15px;
+  /* box-shadow: 0px 0px 20px 5px rgb(116, 115, 115); */
+  
+  filter: saturate(200%);
+
+}
+
+.bold{
+    font-weight: bolder;
+}
+.vision{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 4vmin;
+    letter-spacing: 4px;
+    /* text-align:center; */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.part{
+  
+    margin-right: 5%;
+}
+
+.flex-box{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.img-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* padding: 1rem; */
+
+}
+.img-3{
+    width: 90vmin;
+    padding: 1rem;
+    /* box-shadow: 0px 0px 5px 1px rgb(122, 122, 123); */
+    border-radius: 50px;
+}

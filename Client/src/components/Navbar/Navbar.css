@@ -1,0 +1,118 @@
+
+  .nav-bg{
+    width: 100%;
+    background-color: #050c19;
+
+    height:15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .navbar {
+    display: flex;
+    /* height: 200px; */
+  }
+  
+  
+  
+  .nav-item {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* float: right; */
+    /* text-align: right; */
+    width: 100%;
+    align-items: center;
+  
+  }
+  
+  .link-hover:hover{
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+  }
+  /* .it{
+  text-align: right;
+  float: right;
+  margin-right: auto;
+  } */
+  .item {
+    font-size: 1.2em;
+    /* text-align: right; */
+    /* margin-right: auto; */
+    padding: 0 4% 0 4%;
+    color: white;
+    text-decoration: none;
+  cursor: pointer;
+  }
+  .item:hover{
+    
+  }
+  a:hover{
+color: red;
+  }
+  
+  .active {
+    color: #8490ff;
+    /* color: #fff; */
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+
+  .acc-img{
+    border-radius: 50%;
+   width: 60px;
+    
+  }
+ 
+  .signInDiv{
+    width: 100px;
+  }
+  .det{
+    display: flex;
+  }
+  @media screen and (max-width:600px){
+    .nav-item {
+        display: none;
+      }
+      
+      
+    
+      .nav-item-mobile {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        list-style: none;
+        transition: all 0.5s ease-out;
+        
+        width: 310px;
+        left: 0;
+        top: 68px;
+        width: 100%;
+        background-color: rgb(9, 9, 66);
+      }
+      
+      .item {
+        color: #f9f9ff;
+        text-align: center;
+       padding: 10px;
+        transition: all 0.5s ease;
+      }
+      
+     
+      .nav-icon {
+        color: white;
+        display: block;
+        font-size: 30px;
+        border: none;
+        outline: none;
+       justify-content: center;
+        background: transparent;
+        align-content: center;
+      }
+  }
