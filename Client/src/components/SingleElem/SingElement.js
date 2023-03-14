@@ -5,7 +5,7 @@ import shiv1 from '../../assets/eventimage/shivani.jpg'
 import shiv2 from '../../assets/eventimage/shivani2.jpg'
 import shiv3 from '../../assets/eventimage/shivani3.jpg'
 import shiv4 from '../../assets/eventimage/shivani4.JPG'
-import rule from '../../assets/rule.pdf'
+// import rule from '../../assets/rule.pdf'
 import "./Single.css";
 import Footer from "../Footer/Footer";
 const SingElement = () => {
@@ -51,7 +51,7 @@ All participants will get the participation Certificate
    </ul>
 
     </div>
-    <div className="btn-rul"><a href={rule} target ="_blank" download className=" rulebtn"><button className="btn-grad">Rule-Book</button></a></div>
+    <div className="btn-rul"><a href="" target ="_blank" download className=" rulebtn"><button className="btn-grad">Rule-Book</button></a></div>
 
 {/* sec-3  */}
 <section className=' grid-container eve-gallary'>
