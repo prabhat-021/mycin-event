@@ -1,10 +1,11 @@
 import React, {useState,setState} from 'react';
-import './style.css'
+import './signup.css'
 function SignupForm() {
     
     const [firstName, setFirstName] = useState(null);
     const [lastName, setLastName] = useState(null);
     const [email, setEmail] = useState(null);
+    const [username,setusername] = useState(null)
     const [password,setPassword] = useState(null);
     const [confirmPassword,setConfirmPassword] = useState(null);
 
@@ -25,6 +26,10 @@ function SignupForm() {
         if(id === "confirmPassword"){
             setConfirmPassword(value);
         }
+        if(id === "username")
+        {
+            setusername(value);
+        }
 
     }
 
@@ -34,10 +39,10 @@ function SignupForm() {
 
     return(
         <>
-        <div className='main'>
-    <div className='box'>
-    <h1>Signup</h1>
-    <form action="" > 
+        <div className='main-signup'>
+    <div className='box-signup'>
+    <h1 className='h1-signup'>Signup</h1>
+    <form action="" className='form-signup'> 
                     <label className="form__label" for="firstName">First Name </label>
                     <input className="form__input" type="text" value={firstName} onChange = {(e) => handleInputChange(e)} id="firstName" placeholder="First Name"/>
              
@@ -45,7 +50,11 @@ function SignupForm() {
                     <label className="form__label" for="lastName">Last Name </label>
                     <input  type="text" name="" id="lastName" value={lastName}  className="form__input" onChange = {(e) => handleInputChange(e)} placeholder="LastName"/>
        
-                    <label className="form__label" for="email">Email </label>
+       
+                    <label className="form__label" for="username">Username </label>
+                    <input  type="text" id="username" className="form__input" value={username} onChange = {(e) => handleInputChange(e)} placeholder="Library Id"/>
+
+                    <label className="form__label" for="email">Email</label>
                     <input  type="email" id="email" className="form__input" value={email} onChange = {(e) => handleInputChange(e)} placeholder="Email"/>
      
  
@@ -56,7 +65,7 @@ function SignupForm() {
                     <label className="form__label" for="confirmPassword">Confirm Password </label>
                     <input className="form__input" type="password" id="confirmPassword" value={confirmPassword} onChange = {(e) => handleInputChange(e)} placeholder="Confirm Password"/>
 
-                    <button onClick={()=>handleSubmit()} type="submit" className='button'>Signup</button>
+                    <button onClick={()=>handleSubmit()} type="submit" className='button-signup'>Signup</button>
             </form>
          
               

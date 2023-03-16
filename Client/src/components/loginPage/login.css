@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.main{
+.main-login{
     background-color: rgb(31 41 55);
     height: 100vh;
     width: 100vw;
@@ -10,29 +10,32 @@
     align-items: center;
     justify-content: center;
 }
-.box{
+.box-login{
 	background-color: rgb(17 24 39);
-    /* color: white; */
+
     color: rgb(156 163 175);
-    width: 350px;
-    height: 60vh;
+    /* width: 350px; */
+    height: auto;
     line-height: 30px;
     border-radius: 10px;
+ 
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 @media (max-width: 370px) {
-    .box{
+    .box-login{
         width: 100vw;
         height: 100vh;
         
     }
-    .form{
-        width: 80vw;
+    .form-login{
+        width: 70vw;
     }
-    h1{
+    .h1-login{
         margin-top: 30px;
     }
 }
-h1{
+.h1-login{
     color: white;
     text-align: center;
     font-weight: bold;
@@ -40,13 +43,14 @@ h1{
     line-height: 70px;
     /* font-size: 60px; */
 }
-form{
-    width: 300px;
+.form-login{
     margin: auto;
     font-size: 20px;
-    /* display: block; */
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 10px 20px 10px;
 }
-input{
+.input-login{
     width: 95%;
     padding: 8px;;
     background-color: rgb(55 65 81);
@@ -58,7 +62,7 @@ input{
     font-size: 18px;
 
 }
-.button{
+.button-login{
     width: 102%;
     margin-top: 20px;
     background-color: rgb(58, 171, 135);
@@ -72,14 +76,14 @@ input{
     margin-top: 10px;
     font-size: 16px;
 }
-.button:hover{
+.button-login:hover{
     background-color: rgb(31, 114, 89);
     font-size: 23px;
 }
-a{
+.a-login{
     color: white;
     text-decoration: none;
 }
-a:hover{
+.a-login:hover{
     text-decoration: underline;
 }
