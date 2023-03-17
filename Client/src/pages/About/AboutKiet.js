@@ -5,9 +5,11 @@ import image2 from "../../assets/AboutKietImages/2.jpg";
 import image3 from "../../assets/AboutKietImages/3.jpg";
 import "./AboutKiet.css";
 
+
 export default function AboutKiet() {
   return (
     <>
+      <Navbar />
       <section className="main">
         <h1 className="about">
           <span className="land-head-span"> About </span> Us
@@ -16,7 +18,7 @@ export default function AboutKiet() {
           <div className="flex">
             <div className="font">
               <div className="heading">
-                
+
                 KIET GROUP OF <br /> INSTITUTIONS
               </div>
               <br /> Delhi-NCR, Ghaziabad-Meerut Road

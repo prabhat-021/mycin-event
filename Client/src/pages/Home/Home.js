@@ -28,7 +28,7 @@ const Home = () => {
     // }, []);
 
     return (
-        <>
+        <div className='ii'>
             <Navbar />
             <section className='vid-1  sec-vid'>
                 <Landing />
@@ -108,7 +108,7 @@ const Home = () => {
                 </div>
             </section>
             <Footer />
-        </>
+        </div>
     )
 
 }

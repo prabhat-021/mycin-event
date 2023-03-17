@@ -1,42 +1,44 @@
-
-.Team_Title{
+.Team_Title {
     text-align: center;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 49px;
-    background: linear-gradient(
-            to right, #f32170, #ff6b08,
-             #cf23cf, #eedd44);
-     -webkit-text-fill-color: transparent;
-     -webkit-background-clip: text;
+    background: linear-gradient(to right, #f32170, #ff6b08,
+            #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     padding: 36px;
     top: 22px;
     position: relative;
 }
-.Team_row{
+
+.Team_row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
 }
+
 .Team_container {
     margin: 50px;
 }
-.Team_col{
+
+.Team_col {
     margin: 20px;
     width: 265px;
     margin-right: 34px;
     margin-left: 42px;
 }
-@media only screen and  (max-width:661px) {
-    .Team_row{
-        
-    width: 100%;
-    margin: 0px;
-    margin-bottom: 20px;
-        
+
+@media only screen and (max-width:661px) {
+    .Team_row {
+
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+
     }
 }

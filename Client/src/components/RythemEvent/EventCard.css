@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #050c19;
 }
 
 .ele-rout {

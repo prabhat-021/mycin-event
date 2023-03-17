@@ -1,6 +1,6 @@
 import React from 'react'
 import './Gallary.css';
-import galimg from '../../assets/images/gal1.jpg'
+import galimg from '../../assets/eventimage/gal1.jpg'
 const Gallary = () => {
   return (
     <>
