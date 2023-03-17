@@ -72,6 +72,11 @@ document.getElementById("signInDiv").hidden = false;
             <Link className="item"  to="/timeline">Timeline </Link>
           </li>
           <li className="item">
+            <Link className="item"  to="/login">login </Link>
+          </li><li className="item">
+            <Link className="item"  to="/signup">signup</Link>
+          </li>
+          <li className="item">
             <Link className="item"  to="/aboutKiet">About</Link>
           </li>
           {/* <li className="item">
