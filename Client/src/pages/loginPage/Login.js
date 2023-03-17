@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import './login.css';
-import RegistrationForm from "./registration"; 
+
 const Login=()=>{ 
 	const [email,setEmail]=useState(""); 
 	const [passw,setPassw]=useState(""); 
