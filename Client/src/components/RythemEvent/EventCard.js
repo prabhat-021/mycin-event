@@ -28,7 +28,7 @@ export  function EventCard1(props) {
                 <img className="img1" src={`https://drive.google.com/uc?id=${props.imgid}`} alt="image" />
 
             {/* </div> */}
-            <div className="event-title link-hover ii">
+            <div className="event-title-1 link-hover ii">
                 {props.title}
             </div>
             <div className="event-dis ii">
