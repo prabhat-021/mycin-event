@@ -29,6 +29,7 @@ const Home = () => {
 
     return (
         <div className='ii'>
+            
             <Navbar />
             <section className='vid-1  sec-vid'>
                 <Landing />
@@ -36,7 +37,7 @@ const Home = () => {
             <section className='bg-1 sec'>
                 <EventCard />
             </section>
-            <section className='bg-2 sec sec-new'>
+            {/* <section className='bg-2 sec sec-new'>
                 <div className='sec-eve-nam'><span className='land-head-span'>UPCOMING</span>  EVENTS</div>
                 <div className='sec-det-eve'>Best Music Events</div>
             </section>
@@ -68,7 +69,7 @@ const Home = () => {
                     <div className='sec-det-eve'>BAND WAR</div>
                     <button className='btn' >Get Ticket</button></div>
 
-            </section>
+            </section> */}
             <section><Gallary /></section>
 
             {/* <section className='sec sec-btn'>

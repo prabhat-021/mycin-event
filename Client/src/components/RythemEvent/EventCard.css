@@ -35,7 +35,7 @@
 }
 
 .img1 {
-
+    position: relative;
     width: 100%;
     height: 21vmax;
     border-radius: 4%;
@@ -107,5 +107,11 @@
 @media screen and (max-width: 390px) {
     .event-h1 {
         font-size: 1.6rem;
+    }
+    
+@media screen and (max-width: 442px) {
+        .container{
+            width: 87vw;
+        }
     }
 }

@@ -31,7 +31,7 @@ export default function Footer() {
                     </div>
                 </section>
                 <hr />
-                <div className='bottom'>Made With ❤️ by Aryan,Ashwin,Prabhat</div>
+                <div className='bottom'>Made With ❤️ by Team Mycin</div>
             </section>
         </>
     )

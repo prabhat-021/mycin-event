@@ -2,7 +2,7 @@
 
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .Team_card-title {
@@ -19,10 +19,10 @@
 .Team_overflow {
 
   /* background-image: linear-gradient(147deg,#ffe53b,#ff2525 74%); */
-  border-left: 2px solid;
+  /* border-left: 2px solid;
   border-right: 2px solid;
   border-top: 2px solid;
-  border-radius: 14px;
+  border-radius: 14px; */
   /* border-color: aqua; */
 }
 

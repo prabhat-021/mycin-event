@@ -3,8 +3,8 @@
     padding: 0;
 }
 .main-login{
-    background-color: rgb(31 41 55);
-    height: 100vh;
+    background-color:#050c19;
+    /* height: 100vh; */
     width: 100vw;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 .box-login{
 	background-color: rgb(17 24 39);
-
+    margin-top: 30px;
     color: rgb(156 163 175);
     /* width: 350px; */
     height: auto;

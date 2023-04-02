@@ -1,9 +1,12 @@
 import React, { useState, setState } from 'react';
 import './signup.css'
 import Navbar from "../../components/Navbar/Navbar"
-
+import axios from 'axios';
+import { useEffect } from "react";  
+import { useNavigate } from 'react-router-dom';
 
 function SignupForm() {
+    let navigate = useNavigate();
 
     const [firstName, setFirstName] = useState(null);
     const [lastName, setLastName] = useState(null);
@@ -35,17 +38,58 @@ function SignupForm() {
 
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = async (e) => {
         console.log(firstName, lastName, email, password, confirmPassword);
+        
+            e.preventDefault();
+            axios.post("http://192.168.1.3:8000/Event/registration",{
+             first_name :firstName ,  
+             last_name : lastName,
+            email : email,
+            username : username,
+            password : password,  
+            c_password:confirmPassword,
+           })
+           .then(function (response) {
+            console.log(response);
+            if (response.status == 200) {
+             alert("Registration succesfull");
+              navigate("/login");
+            }
+          })
+           .catch(error => {
+            console.log(error);
+            if (error.response.status == 403) {
+                Swal.fire({
+                    icon: "error",
+                    title: error.response.data.error,
+                  });
+            }
+            if (error.response.status == 500) {
+                Swal.fire({
+                    icon: "error",
+                    title: "Internal Error",
+                  });
+            }
+          });
+      
+     
+         setFirstName("");
+         setLastName("");
+         setEmail("");
+         setPassword("");
+         setConfirmPassword("");
+         setusername("");        
+          
     }
 
     return (
         <>
-            <Navbar />
+            
             <div className='main-signup'>
                 <div className='box-signup'>
                     <h1 className='h1-signup'>Signup</h1>
-                    <form action="" className='form-signup'>
+                    <form method='post' className='form-signup'>
                         <label className="form__label" for="firstName">First Name </label>
                         <input className="form__input" type="text" value={firstName} onChange={(e) => handleInputChange(e)} id="firstName" placeholder="First Name" />
 
@@ -68,7 +112,7 @@ function SignupForm() {
                         <label className="form__label" for="confirmPassword">Confirm Password </label>
                         <input className="form__input" type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => handleInputChange(e)} placeholder="Confirm Password" />
 
-                        <button onClick={() => handleSubmit()} type="submit" className='button-signup'>Signup</button>
+                        <button onClick={ handleSubmit} type="submit" className='button-signup'>Signup</button>
                     </form>
 
 

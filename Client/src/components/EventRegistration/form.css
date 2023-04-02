@@ -1,22 +1,24 @@
-*{
+
+  *{
     margin: 0;
     padding: 0;
-}
-.main-signup{
+  }
+
+  .mainregistration{
     background-color: #050c19;
     /* height: 100vh; */
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     height: auto;
 }
-.box-signup{
+.boxinside{
 	background-color: rgb(17 24 39);
     /* color: white; */
     color: rgb(156 163 175);
-    width: 450px;
+    width: 500px;
     height: auto;
     line-height: 30px;
     border-radius: 10px;
@@ -24,6 +26,80 @@
     margin-bottom: 30px;
     margin-top: 50px;
     padding: 10px 10px 30px 10px;
+}
+.formregis{
+    /* width: 300px; */
+    margin: auto;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* display: block; */
+}
+.inputteamname{
+    width: 95%;
+    padding: 8px;;
+    background-color: rgb(55 65 81);
+    border-radius: 7px;
+    border-width: 0;
+    border-color: rgb(59 130 246);
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+
+}
+.button-form{
+    width: 102%;
+    margin-top: 20px;
+    background-color: rgb(58, 171, 135);
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 8px;
+    border-width: 0;
+}
+.button-submit{
+  width: 102%;
+  margin-top: 20px;
+  background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+  
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  padding: 8px;
+  border-width: 0;
+}
+.button-remove{
+    width: 102%;
+    margin-top: 20px;
+    background-color: rgb(143, 9, 9);
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
+    padding: 8px;
+    border-width: 0;
+}
+.button-remove:hover{
+  background-color: red;
+}
+.button-submit:hover{
+  background: radial-gradient(907px at 3.4% 19.8%, rgb(255, 243, 122) 0%, rgb(255, 102, 145) 97.4%);
+  color: black;
+}
+
+.xy{
+  margin-top: 40px;
+}
+.txt{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.button-form:hover{
+    background-color: rgb(31, 114, 89);
+    font-size: 23px;
+}
+.a-signup{
+    color: white;
+    text-decoration: none;
 }
 @media (max-width: 370px) {
     .box-signup{
@@ -36,55 +112,5 @@
         width: 80vw;
         /* background-color: aqua; */
     }
-}
-.h1-signup{
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 70px;
-    /* margin-top: 80px; */
-    /* font-size: 60px; */
-}
-.form-signup{
-    /* width: 300px; */
-    margin: auto;
-    font-size: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
-    /* display: block; */
-}
-.form__input{
-    width: 95%;
-    padding: 8px;;
-    background-color: rgb(55 65 81);
-    border-radius: 7px;
-    border-width: 0;
-    border-color: rgb(59 130 246);
-    margin-bottom: 10px;
-    color: white;
-    font-size: 18px;
-
-}
-.button-signup{
-    width: 102%;
-    margin-top: 20px;
-    background-color: rgb(58, 171, 135);
-    color: white;
-    font-size: 20px;
-    border-radius: 7px;
-    padding: 8px;
-    border-width: 0;
-}
-.txt{
-    margin-top: 10px;
-    font-size: 16px;
-}
-.button-signup:hover{
-    background-color: rgb(31, 114, 89);
-    font-size: 23px;
-}
-.a-signup{
-    color: white;
-    text-decoration: none;
+    
 }

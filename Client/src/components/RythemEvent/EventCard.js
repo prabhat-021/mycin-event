@@ -18,6 +18,9 @@ import { NavLink } from 'react-router-dom';
 
 export  function EventCard1(props) {
     const {id} = props
+    const gettotop=()=>{
+        window.scrollTo({top:0,left:0,behavior:"smooth"});
+    }
     return (
         <NavLink className="ele-rout " to={`/singleElement/${id}`}>
         <div className="container">
@@ -31,7 +34,7 @@ export  function EventCard1(props) {
             <div className="event-dis ii">
                 {props.discription}
             </div>
-            <button className="button link-hover ii">Expolre More</button>
+            <button className="button link-hover ii" onClick={gettotop}>Expolre More</button>
         </div>
         </NavLink>
     );

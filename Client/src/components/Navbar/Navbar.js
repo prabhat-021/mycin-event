@@ -5,11 +5,19 @@ import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import jwt_decode from "jwt-decode";
-import axios from 'axios';
-const Navbar = () => {
+// import jwt_decode from "jwt-decode";
+// import axios from 'axios';
+import imageProfile from "../../assets/Navbar/profile.jpg";
+import imageLogout from "../../assets/Navbar/logout.png";
+import imageEmail from "../../assets/Navbar/email.png";
+import imageTeam from "../../assets/Navbar/Team.png";
 
+const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   const [icons, setIcon] = React.useState(false);
+  function toggleMenuProfile(e){
+    setToggle(!toggle);
+    }
 
   //     const [user ,setUser] = useState({})
   //     const handlCallbackResponse = async (response) => {
@@ -60,7 +68,7 @@ const Navbar = () => {
         <ul className={icons ? "nav-item-mobile" : "nav-item "}
           onClick={() => setIcon(false)}>
           <li className="item ">
-            <Link className="item" to="/">Home </Link>
+            <Link className="item" to="/home">Home </Link>
           </li>
           {/* <li className="item">
             <Link className="item"  to="/about">Residence </Link>
@@ -74,12 +82,12 @@ const Navbar = () => {
           <li className="item">
             <Link className="item" to="/team">Team </Link>
           </li>
-          <li className="item">
+          {/* <li className="item">
             <Link className="item" to="/login">Login </Link>
           </li>
           <li className="item">
             <Link className="item" to="/signup">Signup</Link>
-          </li>
+          </li> */}
           <li className="item">
             <Link className="item" to="/aboutKiet">About</Link>
           </li>
@@ -94,11 +102,46 @@ const Navbar = () => {
          <div className='name'>{user.name}</div></div>
           }  */}
 
-
+          <li>
+          
+              <img src={imageProfile} className="user-pic" onClick={toggleMenuProfile}/>    
+             {toggle ? <div className="sub-menu-wrap" id="subMenu">
+                      <div className="sub-menu">
+                      <div className="user-info">
+                      {/* <img src="images/user.png"/> */}
+                      <h2>Tushar Sharma</h2>
+                       </div>
+                       <hr></hr>
+                            <a href="#" className="sub-menu-link">
+                                  <img src={imageEmail}/>
+                                  <p>Email</p>
+                                  <span> &gt;</span>
+                            </a>
+                            <a href="#" className="sub-menu-link">
+                                <img src={imageTeam}/>
+                                <p>Team Name</p>
+                                <span> &gt;</span>
+                            </a>
+                            {/* <a href="#" className="sub-menu-link">
+                                <img src="images/help.png"/>
+                                <p>Help & Support</p>
+                                <span> &gt;</span>
+                            </a> */}
+                                <a href="#" className="sub-menu-link">
+                                <img src={imageLogout}/>
+                                <p>Logout</p>
+                                <span>&gt;</span>
+                            </a>
+                        </div> 
+                    </div> 
+                    :
+                    <></>
+                    }      
+          </li>
         </ul>
         <button className="nav-icon"
           onClick={() => setIcon(!icons)}>
-          {icons ? <CloseIcon /> : <MenuIcon className='icon' />}
+          {icons ? <CloseIcon /> : <MenuIcon className='icon'  />}
         </button>
       </div>
     </section>

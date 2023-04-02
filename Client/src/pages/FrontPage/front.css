@@ -1,0 +1,100 @@
+.front {
+  color: lightseagreen;
+  background-color: rgb(9, 9, 9);
+  font-family: "Courier New", Courier, monospace;
+}
+.frontcontainer {
+ 
+  font-family: "Courier New", Courier, monospace;
+}
+
+.top-marquee {
+  background: #000;
+}
+
+marquee {
+  padding-left: 12px;
+  padding-right: 12px;
+  color: lightseagreen;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.mid-body {
+  margin-top: 3.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2.25rem;
+  color: lightseagreen;
+}
+
+.logo-div {
+  text-align: center;
+}
+
+.logo-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.kiet-logo {
+  width: 7rem;
+  height: 7rem;
+  display: inline;
+}
+
+.logo-name {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: lightseagreen;
+}
+
+.logo-dtls {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.75rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: lightseagreen;
+  text-decoration: underline;
+  text-decoration-color: lightseagreen;
+}
+
+.presents {
+  font-size: 23px;
+  margin-top: 0.5rem;
+}
+
+.event-title-div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-title {
+  font-size: 72px;
+  font-weight: bold;
+  color: lightseagreen;
+}
+
+.event-status {
+  font-size: x-large;
+}
+
+.login-div {
+  text-align: center;
+}
+
+.login-btn {
+  color: lightseagreen;
+  font-size: 24px;
+  text-decoration: none;
+}
+@media screen and (max-width:450px) {
+  .event-title{
+    font-size: 35px;
+  }
+  
+}

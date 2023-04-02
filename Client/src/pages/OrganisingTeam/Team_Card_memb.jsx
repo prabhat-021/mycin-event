@@ -1,21 +1,22 @@
 import React from "react";
 import TeamCard from "./Team_Card";
 import "./Team_Card_memb.css";
-import image1 from "../../assests/Team/Archit Srivastava.jpeg";
-import image2 from "../../assests/Team/Kushagra Srivastava.jpg";
-import image3 from "../../assests/Team/Kartikeya Srivastava.jpeg";
-import image4 from "../../assests/Team/Tushar Sharma CS.jpeg";
-import image5 from "../../assests/Team/Vaibhav Choudhary.jpeg";
-import image6 from "../../assests/Team/Siddharth Chourasia.jpeg";
-import image7 from "../../assests/Team/Shubhank Dwivedi CSE.jpeg";
-import image8 from "../../assests/Team/ANSHIKA DUBEY.jpg";
-import image9 from "../../assests/Team/ANIKET BHARDWAJ.jpg";
-import image10 from "../../assests/Team/Nandini Tyagi CS.jpeg";
-import image11 from "../../assests/Team/Avishi Tayal CS.jpg";
-import image12 from "../../assests/Team/Prateek_Gupta.jpg";
-import image13 from "../../assests/Team/Vaishnavi Awasthi.jpg";
-import image14 from "../../assests/Team/Vidhi CS.jpg";
-import image15 from "../../assests/Team/VISHAL P.jpeg";
+import Navbar from "../../components/Navbar/Navbar";
+import image1 from "../../assets/Team/Archit Srivastava.jpeg";
+import image2 from "../../assets/Team/Kushagra Srivastava.jpg";
+import image3 from "../../assets/Team/Kartikeya Srivastava.jpeg";
+import image4 from "../../assets/Team/Tushar Sharma CS.jpeg";
+import image5 from "../../assets/Team/Vaibhav Choudhary.jpeg";
+import image6 from "../../assets/Team/Siddharth Chourasia.jpeg";
+import image7 from "../../assets/Team/Shubhank Dwivedi CSE.jpeg";
+import image8 from "../../assets/Team/ANSHIKA DUBEY.jpg";
+import image9 from "../../assets/Team/ANIKET BHARDWAJ.jpg";
+import image10 from "../../assets/Team/Nandini Tyagi CS.jpeg";
+import image11 from "../../assets/Team/Avishi Tayal CS.jpg";
+import image12 from "../../assets/Team/Prateek_Gupta.jpg";
+import image13 from "../../assets/Team/Vaishnavi Awasthi.jpg";
+import image14 from "../../assets/Team/Vidhi CS.jpg";
+import image15 from "../../assets/Team/VISHAL P.jpeg";
 
 
 const Team_Member=()=>{
@@ -175,8 +176,10 @@ const Team_Member=()=>{
 
       ];
     return (
+   <div className="Teambgcolor"><Navbar />
     <div className="Team_container ">
-         <h3 className="Team_Title">Organizing Team</h3>
+         <h3 className="Team_Title">ORGANIZING </h3>
+         <p className="Team_Title2">TEAM</p>
             <div className="Team_row">
                {cards.map(({ title, image, text,git,linkdin,insta, id }) => (
                   <div className="Team_col" key={id}>
@@ -184,6 +187,6 @@ const Team_Member=()=>{
                   </div>
                   ))}
             </div>
-  </div>);
+  </div></div>);
 }
 export default Team_Member;

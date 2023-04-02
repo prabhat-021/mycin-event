@@ -18,7 +18,9 @@
 
 }
 
-.grid-element {}
+.grid-element {
+    position: relative;
+}
 
 .grid-elementbase {
 

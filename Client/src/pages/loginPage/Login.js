@@ -1,18 +1,31 @@
 import React, { useState } from 'react';
 import './login.css';
-import Navbar from "../../components/Navbar/Navbar"
-
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 const Login = () => {
 	const [email, setEmail] = useState("");
 	const [passw, setPassw] = useState("");
 	const [dataInput, setDataInput] = useState("");
-	const submitThis = () => {
+	const submitThis = async (e) => {
 		const info = { email: email, passw: passw };
 		setDataInput([info]);
+		
+			e.preventDefault();
+			axios.post("http://192.168.1.3:8000/Event/login",{
+			username:email,
+			password:passw, 
+		   })
+				 .then(result=>{
+			console.log(result)
+		   }) 
+				 .catch(err=>{
+				  console.log(err)
+				 }) 
+		  
 	}
 	return (
 		<>
-			<Navbar />
+			
 			<div className='main-login'>
 				<div className='box-login'>
 
@@ -25,11 +38,11 @@ const Login = () => {
 
 						<div>
 							<label htmlFor="passw">Password</label>
-							<input type="text" className='input-login' name="passw" id="passw" value={passw} onChange={(e) => setPassw(e.target.value)} />
+							<input type="password" className='input-login' name="passw" id="passw" value={passw} onChange={(e) => setPassw(e.target.value)} />
 						</div>
 						<button className='button-login' type="submit">Login</button>
 
-						<div className='txt'>Don't have an account <a href='#' className='a-login'>Sign up here</a></div>
+						<div className='txt'>Don't have an account <Link to='/signup' className='a-login'>Sign up here</Link></div>
 					</form>
 
 					{/* <div className='txt'>Don't have an account <a href='#'>Sign up here</a></div> */}

@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useProductContext } from "../../context/eventContext";
 import shiv1 from '../../assets/eventimage/shivani.jpg'
 import shiv2 from '../../assets/eventimage/shivani2.jpg'
 import shiv3 from '../../assets/eventimage/shivani3.jpg'
 import shiv4 from '../../assets/eventimage/shivani4.JPG'
+import Navbar from '../Navbar/Navbar'
 // import rule from '../../assets/rule.pdf'
 import "./Single.css";
 import Footer from "../Footer/Footer";
@@ -15,11 +16,13 @@ const SingElement = () => {
     return curElem.id == id.id;
   });
   console.log(single_event);
-
+  const gettotop=()=>{
+    window.scrollTo({top:0,left:0,behavior:"smooth"});
+}
   
   return (
     <>
-    
+    <Navbar/>
     <section className="single-event-section">
       <h1 className="eve-head-1">{single_event[0].title.slice(0,2)}<span className="land-head-span">{single_event[0].title.slice(2,-4)}</span>{single_event[0].title.slice(-4)}</h1>
       {/* sec-1  */}
@@ -30,7 +33,7 @@ const SingElement = () => {
     {single_event[0].discription}
   </p>
   
-  <button className="btn-grad">REGISTER</button>
+  <Link to="/leader-registration" ><button className="btn-grad" onClick={gettotop}>REGISTER</button></Link>
 
  </div>
  <img  className="eve-img" src={`https://drive.google.com/uc?id=${single_event[0].imgid}`} alt="eveent image" />
